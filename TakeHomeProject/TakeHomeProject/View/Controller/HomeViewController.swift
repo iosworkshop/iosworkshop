@@ -21,6 +21,9 @@ class HomeViewController: UIViewController {
         homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
     }
     
+    
+    
+    
 }
 
 extension HomeViewController: UITableViewDataSource{
