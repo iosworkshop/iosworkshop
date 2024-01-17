@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCollectionViewCell" id="FM4-mv-XeK" customClass="CustomCollectionViewCell" customModule="TableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0Fq-BC-GuI">
+                <rect key="frame" x="0.0" y="0.0" width="186" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gc-do-4X0">
+                        <rect key="frame" x="0.0" y="0.0" width="186" height="192"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loin" translatesAutoresizingMaskIntoConstraints="NO" id="pV0-az-c31">
+                                <rect key="frame" x="5" y="5" width="176" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="w6U-Ve-pJM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzp-fd-lzu">
+                                <rect key="frame" x="5" y="160" width="176" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="djy-NW-29Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pV0-az-c31" firstAttribute="top" secondItem="4gc-do-4X0" secondAttribute="top" constant="5" id="Amu-5B-huA"/>
+                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="leading" secondItem="pV0-az-c31" secondAttribute="leading" id="J4M-ly-qz3"/>
+                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="top" secondItem="pV0-az-c31" secondAttribute="bottom" constant="5" id="Phe-WB-dsA"/>
+                            <constraint firstAttribute="trailing" secondItem="pV0-az-c31" secondAttribute="trailing" constant="5" id="Sqw-my-qZw"/>
+                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="trailing" secondItem="pV0-az-c31" secondAttribute="trailing" id="sxh-Zq-Sii"/>
+                            <constraint firstItem="pV0-az-c31" firstAttribute="leading" secondItem="4gc-do-4X0" secondAttribute="leading" constant="5" id="tmy-hL-hah"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4gc-do-4X0" firstAttribute="top" secondItem="0Fq-BC-GuI" secondAttribute="top" id="KJN-eN-fKw"/>
+                    <constraint firstAttribute="bottom" secondItem="4gc-do-4X0" secondAttribute="bottom" id="NIV-c8-xT8"/>
+                    <constraint firstAttribute="trailing" secondItem="4gc-do-4X0" secondAttribute="trailing" id="hUZ-nI-imM"/>
+                    <constraint firstItem="4gc-do-4X0" firstAttribute="leading" secondItem="0Fq-BC-GuI" secondAttribute="leading" id="tQs-Oz-ryq"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="173" height="397"/>
+            <connections>
+                <outlet property="imgImage" destination="pV0-az-c31" id="oZo-7O-Art"/>
+                <outlet property="lblName" destination="Tzp-fd-lzu" id="Pvz-kx-bL8"/>
+            </connections>
+            <point key="canvasLocation" x="-705.3435114503817" y="-292.95774647887328"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Loin" width="892" height="816"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
