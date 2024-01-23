@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FDDCAE92B5D3AAB001BCA09 /* CustomCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDDCAE82B5D3AAB001BCA09 /* CustomCollectionData.swift */; };
+		0FDDCAED2B5D6F23001BCA09 /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDDCAEC2B5D6F23001BCA09 /* FruitViewModel.swift */; };
 		1D18AD212B56F13F008C5CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D18AD202B56F13F008C5CD0 /* AppDelegate.swift */; };
 		1D18AD232B56F13F008C5CD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D18AD222B56F13F008C5CD0 /* SceneDelegate.swift */; };
 		1D18AD2A2B56F140008C5CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D18AD292B56F140008C5CD0 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FDDCAE82B5D3AAB001BCA09 /* CustomCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionData.swift; sourceTree = "<group>"; };
+		0FDDCAEC2B5D6F23001BCA09 /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		1D18AD1D2B56F13F008C5CD0 /* TakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D18AD202B56F13F008C5CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D18AD222B56F13F008C5CD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,9 +110,9 @@
 				1D18AD342B56F151008C5CD0 /* Model */,
 				1D18AD362B56F165008C5CD0 /* View */,
 				1D18AD352B56F158008C5CD0 /* ViewModel */,
+				1D18AD5F2B56F6A2008C5CD0 /* JsonFiles */,
 				1D18AD372B56F173008C5CD0 /* Miscellaneous */,
 				1D18AD292B56F140008C5CD0 /* Assets.xcassets */,
-				1D18AD5F2B56F6A2008C5CD0 /* JsonFiles */,
 				1D18AD2B2B56F140008C5CD0 /* LaunchScreen.storyboard */,
 				1D18AD2E2B56F140008C5CD0 /* Info.plist */,
 			);
@@ -120,6 +124,8 @@
 			children = (
 				1D18AD622B56F6E7008C5CD0 /* CustomTableData.swift */,
 				1D18AD632B56F6E7008C5CD0 /* PhotoGallaryModel.swift */,
+				0FDDCAE82B5D3AAB001BCA09 /* CustomCollectionData.swift */,
+				1D18AD512B56F674008C5CD0 /* AnimalsViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,12 +133,12 @@
 		1D18AD352B56F158008C5CD0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1D18AD512B56F674008C5CD0 /* AnimalsViewModel.swift */,
 				1D18AD542B56F674008C5CD0 /* CustomCollectionViewModel.swift */,
 				1D18AD4F2B56F674008C5CD0 /* CustomCollectionViewModelAdaptable.swift */,
 				1D18AD502B56F674008C5CD0 /* CustomTableViewModelAdaptable.swift */,
 				1D18AD532B56F674008C5CD0 /* HomeViewModel.swift */,
 				1D18AD522B56F674008C5CD0 /* HomeViewModelAdaptable.swift */,
+				0FDDCAEC2B5D6F23001BCA09 /* FruitViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,9 +178,9 @@
 		1D18AD392B56F1E4008C5CD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1D18AD472B56F647008C5CD0 /* CustomCollectionViewController.swift */,
-				1D18AD482B56F647008C5CD0 /* CustomTableViewController.swift */,
 				1D18AD492B56F647008C5CD0 /* HomeViewController.swift */,
+				1D18AD482B56F647008C5CD0 /* CustomTableViewController.swift */,
+				1D18AD472B56F647008C5CD0 /* CustomCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,7 +215,6 @@
 				697F19F67BE56130A1C53620 /* Pods-TakeHomeProject.debug.xcconfig */,
 				89A2982A6F3C119C8C50C8CB /* Pods-TakeHomeProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -322,6 +327,7 @@
 				1D18AD4A2B56F647008C5CD0 /* CustomCollectionViewController.swift in Sources */,
 				1D18AD4B2B56F647008C5CD0 /* CustomTableViewController.swift in Sources */,
 				1D18AD5E2B56F688008C5CD0 /* SPCustomTableViewData.swift in Sources */,
+				0FDDCAE92B5D3AAB001BCA09 /* CustomCollectionData.swift in Sources */,
 				1D18AD4C2B56F647008C5CD0 /* HomeViewController.swift in Sources */,
 				1D18AD572B56F674008C5CD0 /* AnimalsViewModel.swift in Sources */,
 				1D18AD5A2B56F674008C5CD0 /* CustomCollectionViewModel.swift in Sources */,
@@ -330,6 +336,7 @@
 				1D18AD652B56F6E7008C5CD0 /* PhotoGallaryModel.swift in Sources */,
 				1D18AD212B56F13F008C5CD0 /* AppDelegate.swift in Sources */,
 				1D18AD562B56F674008C5CD0 /* CustomTableViewModelAdaptable.swift in Sources */,
+				0FDDCAED2B5D6F23001BCA09 /* FruitViewModel.swift in Sources */,
 				1D18AD422B56F618008C5CD0 /* HomeTableViewCell.swift in Sources */,
 				1D18AD232B56F13F008C5CD0 /* SceneDelegate.swift in Sources */,
 			);

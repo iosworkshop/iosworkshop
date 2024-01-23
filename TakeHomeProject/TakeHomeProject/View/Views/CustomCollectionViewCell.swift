@@ -11,8 +11,9 @@ class CustomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblDetails: UILabel!
     @IBOutlet weak var imgImage: UIImageView!
-    
+
+    func setUpCollectionViewUI(item:fruitDetails){
+        lblName.text = item.name
+        imgImage.image = item.image
+    }
 }
-
-
-

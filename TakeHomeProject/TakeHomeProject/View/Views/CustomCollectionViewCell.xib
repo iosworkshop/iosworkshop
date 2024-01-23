@@ -21,16 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loin" translatesAutoresizingMaskIntoConstraints="NO" id="pV0-az-c31">
-                                <rect key="frame" x="5" y="5" width="190" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="w6U-Ve-pJM"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="163"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzp-fd-lzu">
-                                <rect key="frame" x="5" y="160" width="190" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="djy-NW-29Q"/>
-                                </constraints>
+                                <rect key="frame" x="5" y="168" width="190" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,26 +32,30 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pV0-az-c31" firstAttribute="top" secondItem="4gc-do-4X0" secondAttribute="top" constant="5" id="Amu-5B-huA"/>
-                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="leading" secondItem="pV0-az-c31" secondAttribute="leading" id="J4M-ly-qz3"/>
-                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="top" secondItem="pV0-az-c31" secondAttribute="bottom" constant="5" id="Phe-WB-dsA"/>
-                            <constraint firstAttribute="trailing" secondItem="pV0-az-c31" secondAttribute="trailing" constant="5" id="Sqw-my-qZw"/>
-                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="trailing" secondItem="pV0-az-c31" secondAttribute="trailing" id="sxh-Zq-Sii"/>
-                            <constraint firstItem="pV0-az-c31" firstAttribute="leading" secondItem="4gc-do-4X0" secondAttribute="leading" constant="5" id="tmy-hL-hah"/>
+                            <constraint firstItem="pV0-az-c31" firstAttribute="centerY" secondItem="4gc-do-4X0" secondAttribute="centerY" constant="-18.5" id="2UF-Sh-FZA"/>
+                            <constraint firstItem="pV0-az-c31" firstAttribute="leading" secondItem="4gc-do-4X0" secondAttribute="leading" id="9l7-mR-wCQ"/>
+                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="top" secondItem="pV0-az-c31" secondAttribute="bottom" constant="5" id="Bjw-5a-pCa"/>
+                            <constraint firstAttribute="trailing" secondItem="Tzp-fd-lzu" secondAttribute="trailing" constant="5" id="Fp9-ye-gYu"/>
+                            <constraint firstItem="pV0-az-c31" firstAttribute="centerX" secondItem="4gc-do-4X0" secondAttribute="centerX" id="Ks5-eT-RAo"/>
+                            <constraint firstItem="Tzp-fd-lzu" firstAttribute="leading" secondItem="4gc-do-4X0" secondAttribute="leading" constant="5" id="Nhr-FX-mw9"/>
+                            <constraint firstItem="pV0-az-c31" firstAttribute="top" secondItem="4gc-do-4X0" secondAttribute="top" id="PXQ-Da-Yeo"/>
+                            <constraint firstAttribute="bottom" secondItem="Tzp-fd-lzu" secondAttribute="bottom" id="caR-8f-77l"/>
+                            <constraint firstAttribute="trailing" secondItem="pV0-az-c31" secondAttribute="trailing" id="pn1-zz-fEx"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="4gc-do-4X0" firstAttribute="top" secondItem="0Fq-BC-GuI" secondAttribute="top" id="KJN-eN-fKw"/>
                     <constraint firstAttribute="bottom" secondItem="4gc-do-4X0" secondAttribute="bottom" id="NIV-c8-xT8"/>
+                    <constraint firstAttribute="bottom" secondItem="4gc-do-4X0" secondAttribute="bottom" id="Py6-eN-fTu"/>
                     <constraint firstAttribute="trailing" secondItem="4gc-do-4X0" secondAttribute="trailing" id="hUZ-nI-imM"/>
                     <constraint firstItem="4gc-do-4X0" firstAttribute="leading" secondItem="0Fq-BC-GuI" secondAttribute="leading" id="tQs-Oz-ryq"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="173" height="397"/>
             <connections>
-                <outlet property="imgImage" destination="pV0-az-c31" id="oZo-7O-Art"/>
-                <outlet property="lblName" destination="Tzp-fd-lzu" id="Pvz-kx-bL8"/>
+                <outlet property="imgImage" destination="pV0-az-c31" id="w05-gI-CPQ"/>
+                <outlet property="lblName" destination="Tzp-fd-lzu" id="57j-Zr-xWB"/>
             </connections>
             <point key="canvasLocation" x="-705.3435114503817" y="-292.95774647887328"/>
         </collectionViewCell>
