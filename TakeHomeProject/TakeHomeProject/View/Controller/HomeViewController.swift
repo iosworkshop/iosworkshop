@@ -51,7 +51,10 @@ extension HomeViewController: UITableViewDelegate{
         } else if viewModel?.arrayHomeViewData[indexPath.row] == .collectionView {
             let customTableVC = self.storyboard?.instantiateViewController(withIdentifier: "CustomCollectionViewController")
             self.navigationController?.pushViewController(customTableVC!, animated: true)
-        } else {
+        } else if viewModel?.arrayHomeViewData[indexPath.row] == .tabBar {
+            let TabBarVC = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC")
+            self.navigationController?.pushViewController(TabBarVC!, animated: true)
+        }else {
             
         }
     }

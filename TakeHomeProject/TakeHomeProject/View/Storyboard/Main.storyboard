@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dha-zb-gW5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dha-zb-gW5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -139,7 +140,8 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2iq-O3-BEQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="9Px-Zd-9aJ" firstAttribute="centerY" secondItem="fmc-di-jcG" secondAttribute="centerY" id="37O-rR-cjz"/>
                             <constraint firstItem="9Px-Zd-9aJ" firstAttribute="centerX" secondItem="fmc-di-jcG" secondAttribute="centerX" id="93h-5r-ic3"/>
@@ -171,7 +173,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fPp-WY-sb0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="tst-BQ-Cq0" firstAttribute="centerX" secondItem="kvQ-HL-Xup" secondAttribute="centerX" id="b28-hn-Wyk"/>
                             <constraint firstItem="tst-BQ-Cq0" firstAttribute="centerY" secondItem="kvQ-HL-Xup" secondAttribute="centerY" id="nxC-ai-ptY"/>
@@ -203,7 +205,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fC7-aT-WQc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
                             <constraint firstItem="Ic9-ev-05I" firstAttribute="centerX" secondItem="chu-Ex-CYO" secondAttribute="centerX" id="53a-oh-hAH"/>
                             <constraint firstItem="Ic9-ev-05I" firstAttribute="centerY" secondItem="chu-Ex-CYO" secondAttribute="centerY" id="nFy-eL-26p"/>
@@ -213,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYk-n8-2Cd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5058.7786259541981" y="347.88732394366201"/>
+            <point key="canvasLocation" x="5005" y="348"/>
         </scene>
         <!--Home - 1-->
         <scene sceneID="n1z-Uk-YA0">
@@ -235,7 +237,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MUX-mN-Myv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
                             <constraint firstItem="vuf-rE-XYR" firstAttribute="centerY" secondItem="7fE-rV-VhQ" secondAttribute="centerY" id="EbF-aA-Spz"/>
                             <constraint firstItem="vuf-rE-XYR" firstAttribute="centerX" secondItem="7fE-rV-VhQ" secondAttribute="centerX" id="xIF-d5-Ob8"/>
@@ -247,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="4263" y="348"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="umj-KC-Mm3">
             <objects>
-                <tabBarController id="ywg-4G-6jh" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" id="ywg-4G-6jh" customClass="TabBarVC" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cbQ-ev-Jr6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -288,11 +290,23 @@
     </scenes>
     <resources>
         <image name="homekit" catalog="system" width="128" height="104"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
