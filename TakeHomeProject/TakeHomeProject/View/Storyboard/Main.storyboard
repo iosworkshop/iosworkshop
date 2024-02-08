@@ -220,30 +220,33 @@
         <!--Home - 1-->
         <scene sceneID="n1z-Uk-YA0">
             <objects>
-                <viewController id="hPr-Dn-z9L" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="hPr-Dn-z9L" customClass="HomeVC" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fE-rV-VhQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home -1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuf-rE-XYR">
-                                <rect key="frame" x="121.66666666666669" y="411" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="pwl-lj-xFG"/>
-                                    <constraint firstAttribute="height" constant="30" id="vpk-Ef-ebc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" systemColor="systemCyanColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RZf-pM-kpd">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hPr-Dn-z9L" id="6SK-QM-guH"/>
+                                    <outlet property="delegate" destination="hPr-Dn-z9L" id="2cq-rg-PUL"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MUX-mN-Myv"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vuf-rE-XYR" firstAttribute="centerY" secondItem="7fE-rV-VhQ" secondAttribute="centerY" id="EbF-aA-Spz"/>
-                            <constraint firstItem="vuf-rE-XYR" firstAttribute="centerX" secondItem="7fE-rV-VhQ" secondAttribute="centerX" id="xIF-d5-Ob8"/>
+                            <constraint firstItem="RZf-pM-kpd" firstAttribute="top" secondItem="MUX-mN-Myv" secondAttribute="top" id="D1y-Ei-hUl"/>
+                            <constraint firstItem="MUX-mN-Myv" firstAttribute="bottom" secondItem="RZf-pM-kpd" secondAttribute="bottom" id="KdG-I3-bbW"/>
+                            <constraint firstItem="MUX-mN-Myv" firstAttribute="trailing" secondItem="RZf-pM-kpd" secondAttribute="trailing" id="SEl-GN-goL"/>
+                            <constraint firstItem="RZf-pM-kpd" firstAttribute="leading" secondItem="MUX-mN-Myv" secondAttribute="leading" id="jhd-gT-ZvY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home - 1" image="homekit" catalog="system" id="yEh-Wj-v4U"/>
+                    <connections>
+                        <outlet property="homeTableview" destination="RZf-pM-kpd" id="Vzg-MF-TUy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xi-P3-CrZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,11 +296,11 @@
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
+        <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

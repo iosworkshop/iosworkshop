@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F439ABE2B615F27000D56F9 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F439ABD2B615F27000D56F9 /* TabBarVC.swift */; };
+		0FB37C9B2B75278F002745D3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB37C9A2B75278F002745D3 /* HomeVC.swift */; };
+		0FB37C9F2B7529DF002745D3 /* TabBarHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB37C9E2B7529DF002745D3 /* TabBarHomeTableViewCell.xib */; };
+		0FB37CA12B752A03002745D3 /* TabBarHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB37CA02B752A03002745D3 /* TabBarHomeTableViewCell.swift */; };
 		0FDDCAE92B5D3AAB001BCA09 /* CustomCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDDCAE82B5D3AAB001BCA09 /* CustomCollectionData.swift */; };
 		0FDDCAED2B5D6F23001BCA09 /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDDCAEC2B5D6F23001BCA09 /* FruitViewModel.swift */; };
 		0FDFC02B2B611F4D009D8A43 /* SPGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFC02A2B611F4D009D8A43 /* SPGradientView.swift */; };
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		0F439ABD2B615F27000D56F9 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		0FB37C9A2B75278F002745D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0FB37C9E2B7529DF002745D3 /* TabBarHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarHomeTableViewCell.xib; sourceTree = "<group>"; };
+		0FB37CA02B752A03002745D3 /* TabBarHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHomeTableViewCell.swift; sourceTree = "<group>"; };
 		0FDDCAE82B5D3AAB001BCA09 /* CustomCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionData.swift; sourceTree = "<group>"; };
 		0FDDCAEC2B5D6F23001BCA09 /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		0FDFC02A2B611F4D009D8A43 /* SPGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPGradientView.swift; sourceTree = "<group>"; };
@@ -92,8 +98,26 @@
 			isa = PBXGroup;
 			children = (
 				0F439ABD2B615F27000D56F9 /* TabBarVC.swift */,
+				0FB37C9A2B75278F002745D3 /* HomeVC.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0FB37C9C2B752997002745D3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0FB37C9D2B7529A4002745D3 /* Home */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0FB37C9D2B7529A4002745D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0FB37C9E2B7529DF002745D3 /* TabBarHomeTableViewCell.xib */,
+				0FB37CA02B752A03002745D3 /* TabBarHomeTableViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		1D18AD142B56F13F008C5CD0 = {
@@ -178,6 +202,7 @@
 		1D18AD382B56F1D0008C5CD0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0FB37C9C2B752997002745D3 /* TabBar */,
 				1D18AD3D2B56F618008C5CD0 /* CustomCollectionViewCell.swift */,
 				1D18AD3B2B56F618008C5CD0 /* CustomCollectionViewCell.xib */,
 				1D18AD402B56F618008C5CD0 /* CustomTableViewCell.swift */,
@@ -295,6 +320,7 @@
 				1D18AD2D2B56F140008C5CD0 /* LaunchScreen.storyboard in Resources */,
 				1D18AD2A2B56F140008C5CD0 /* Assets.xcassets in Resources */,
 				1D18AD612B56F6C5008C5CD0 /* PhotoGallary.json in Resources */,
+				0FB37C9F2B7529DF002745D3 /* TabBarHomeTableViewCell.xib in Resources */,
 				1D18AD442B56F618008C5CD0 /* CustomTableViewCell.xib in Resources */,
 				1D18AD452B56F618008C5CD0 /* HomeTableViewCell.xib in Resources */,
 				1D18AD412B56F618008C5CD0 /* CustomCollectionViewCell.xib in Resources */,
@@ -333,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB37CA12B752A03002745D3 /* TabBarHomeTableViewCell.swift in Sources */,
 				1D18AD462B56F618008C5CD0 /* CustomTableViewCell.swift in Sources */,
 				1D18AD5D2B56F688008C5CD0 /* SPHomeListData.swift in Sources */,
 				1D18AD582B56F674008C5CD0 /* HomeViewModelAdaptable.swift in Sources */,
@@ -346,6 +373,7 @@
 				0FDDCAE92B5D3AAB001BCA09 /* CustomCollectionData.swift in Sources */,
 				1D18AD4C2B56F647008C5CD0 /* HomeViewController.swift in Sources */,
 				1D18AD572B56F674008C5CD0 /* AnimalsViewModel.swift in Sources */,
+				0FB37C9B2B75278F002745D3 /* HomeVC.swift in Sources */,
 				1D18AD5A2B56F674008C5CD0 /* CustomCollectionViewModel.swift in Sources */,
 				1D18AD552B56F674008C5CD0 /* CustomCollectionViewModelAdaptable.swift in Sources */,
 				1D18AD592B56F674008C5CD0 /* HomeViewModel.swift in Sources */,
